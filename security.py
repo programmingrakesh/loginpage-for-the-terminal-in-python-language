@@ -10,15 +10,15 @@ mas = messagebox
 #define a function
 def login():
     if enter1.get() == "admin" and enter2.get() == "passwd":
-        os.system(code())
         root.destroy()
+        os.system(code())
         
     else:
         mas.showinfo("warning","NO ENTRY TO THE TERMINATOR")
         exit(root)
-    quit()
+
 def cancel():
-    exit(root)
+    root.destroy()
 
 
 lab1 = Label(root, text='USERNAME ')
@@ -98,8 +98,3 @@ def code():
 
 
 root.mainloop()
-
-
-
-
-
